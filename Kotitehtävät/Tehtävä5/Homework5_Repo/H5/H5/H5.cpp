@@ -20,14 +20,14 @@ int main()
     int b = 6;
     //-----------//
     // Voitko Kokeile voitko muuttaa refA:n osoittamaan b:n osoitteeseen?
-    // Vastaus netist‰: Once defined, a reference cannot be reassigned because it is an alias to its target
+    // Vastaus netist√§: Once defined, a reference cannot be reassigned because it is an alias to its target
     // eli et voi.
     pointerA = &b; // osoitetaan bhen.
-    // Kun t‰htimerkki‰ ei ole, osoitetaan muistipaikkaan,
-    // kun t‰htimerkki on, osoitetaan muistipaikan arvoon ja voidaan myˆs
-    // asettaa esimerkiksi muuttujaan ko. pointteri, koska se k‰ytt‰ytyy t‰ten
+    // Kun t√§htimerkki√§ ei ole, osoitetaan muistipaikkaan,
+    // kun t√§htimerkki on, osoitetaan muistipaikan arvoon ja voidaan my√∂s
+    // asettaa esimerkiksi muuttujaan ko. pointteri, koska se k√§ytt√§ytyy t√§ten
     // samalla tavalla kuin normaali muuttuja.
-    int pointerTest = *pointerA; // = 5
+    int pointerTest = *pointerA; // = 6
     //-----------//
     ClassB objB;
     objB.setInfo("Olion B asettama info");
@@ -44,4 +44,5 @@ int main()
     std::cout << "objB: " << objB.getInfo() << std::endl;
     std::cout << "objA2 " << objA2.getBinfo() << std::endl;
     std::cout << std::endl;
+
 }
